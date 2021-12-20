@@ -1,6 +1,6 @@
 # Quantum Dockerfile
 
-FROM -platform=linux/amd64 centos:7.0.1406
+FROM --platform=linux/amd64 centos:7.0.1406
 MAINTAINER quindar@audacy.space
 LABEL vendor="Audacy"
 
