@@ -15,7 +15,7 @@ module.exports = function(){
 				user: process.env.MONGO_DB_USER, pass: process.env.MONGO_DB_PASSWORD
 			}
         };
-	} else { //return values for development environment in case NODE_ENV not set
+	} else { //return values for development environment in case NODE_ENV not set or NODE_ENV = development
 		return {
         	'azureADAuth' : {
 		        'clientID'         : process.env.OAUTH_CLIENT_ID,

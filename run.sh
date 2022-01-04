@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ECR_HOST="177124026637.dkr.ecr.us-east-2.amazonaws.com"
-TAG=${TAG:-1.0.1}
+TAG=${TAG:-1.0.2}
 
 # pull app
 aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin ${ECR_HOST}

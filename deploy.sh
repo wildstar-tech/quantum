@@ -11,7 +11,7 @@ else
   ENV="development"
 fi
 
-TAG=${TAG:-1.0.1}
+TAG=${TAG:-1.0.2}
 ECR_HOST="177124026637.dkr.ecr.us-east-2.amazonaws.com"
 # get ECR login
 aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin ${ECR_HOST}
